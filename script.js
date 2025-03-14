@@ -195,15 +195,15 @@ function calculateArrowhead(x1, y1, x2, y2) {
     const size = 12; // Arrowhead size
 
     // Adjust node radius dynamically based on direction
-    let toNodeRadius = 15; // Default offset
+    let toNodeRadius = 25; // Default offset
 
     // If horizontal, increase offset more aggressively
     if (Math.abs(x2 - x1) > Math.abs(y2 - y1)) {
-        toNodeRadius = 55; // More padding for horizontal arrows
+        toNodeRadius = -25; // More padding for horizontal arrows
     } 
     // If diagonal, increase slightly
     else if (Math.abs(x2 - x1) > 15 && Math.abs(y2 - y1) > 15) {
-        toNodeRadius = 5; // Moderate padding for diagonals
+        toNodeRadius = 25; // Moderate padding for diagonals
     }
 
     // Calculate adjusted endpoint
