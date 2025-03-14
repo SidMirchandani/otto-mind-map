@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define nodes
     const nodes = [
         { id: 'otto', label: 'Otto Cycle Engine', x: 460, y: 320, color: '#9b4dca' },
-        { id: 'racing', label: 'Racing', x: 90, y: 320, color: '#ff9999' },
+        { id: 'racing', label: 'Racing', x: 90, y: 195, color: '#ff9999' },
         { id: 'motorsports', label: 'Motorsports', x: 138, y: 252, color: '#ffccff' },
         { id: 'roadTrips', label: 'Road Trips', x: 140, y: 310, color: '#ff9999' },
         { id: 'expressionArt', label: 'Expression in Art', x: 140, y: 370, color: '#ff9999' },
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { from: 'technology', to: 'environmentIssues' },
         { from: 'emissions', to: 'environmentIssues' },
         { from: 'engineRefinement', to: 'efficiency' },
+        { from: 'engineRefinement', to: 'emissions' },
         { from: 'society', to: 'environmentIssues' },
         { from: 'automobiles', to: 'economics' },
         { from: 'efficiency', to: 'mechanization' },
