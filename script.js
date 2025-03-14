@@ -197,6 +197,11 @@ function calculateArrowhead(x1, y1, x2, y2) {
     // Adjust node radius dynamically based on direction
     let toNodeRadius = 25; // Default offset
 
+    // If vertical, decrease offset more aggressively
+    if (Math.abs(y2 - y1) > Math.abs(x2 - x1)) {
+        toNodeRadius = 15; // More padding for horizontal arrows
+    } 
+    
     // If horizontal, increase offset more aggressively
     if (Math.abs(x2 - x1) > Math.abs(y2 - y1)) {
         toNodeRadius = 25; // More padding for horizontal arrows
