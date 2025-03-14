@@ -191,38 +191,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 function calculateArrowhead(x1, y1, x2, y2) {
-    const angle = Math.atan2(y2 - y1, x2 - x1);
     const size = 12; // Arrowhead size
 
-    // Adjust node radius dynamically based on direction
-    let toNodeRadius = 25; // Default offset
+    // Calculate midpoint
+    const midX = (x1 + x2) / 2;
+    const midY = (y1 + y2) / 2;
 
-    // If vertical, decrease offset more aggressively
-    if (Math.abs(y2 - y1) > Math.abs(x2 - x1)) {
-        toNodeRadius = 15; // More padding for horizontal arrows
-    } 
+    // Calculate the angle of the line
+    const angle = Math.atan2(y2 - y1, x2 - x1);
+
+    // Calculate arrowhead points at the midpoint
+    const point1X = midX - size * Math.cos(angle - Math.PI / 6);
+    const point1Y = midY - size * Math.sin(angle - Math.PI / 6);
     
-    // If horizontal, increase offset more aggressively
-    if (Math.abs(y2 - y1)<2) {
-        toNodeRadius = 75; // More padding for horizontal arrows
-    } 
-    // If diagonal, increase slightly
-    else if (Math.abs(x2 - x1) > 15 && Math.abs(y2 - y1) > 15) {
-        toNodeRadius = 25; // Moderate padding for diagonals
-    }
+    const point2X = midX - size * Math.cos(angle + Math.PI / 6);
+    const point2Y = midY - size * Math.sin(angle + Math.PI / 6);
 
-    // Calculate adjusted endpoint
-    const endX = x2 - Math.cos(angle) * toNodeRadius;
-    const endY = y2 - Math.sin(angle) * toNodeRadius;
-
-    // Calculate arrowhead points
-    const point1X = endX - size * Math.cos(angle - Math.PI / 6);
-    const point1Y = endY - size * Math.sin(angle - Math.PI / 6);
-    
-    const point2X = endX - size * Math.cos(angle + Math.PI / 6);
-    const point2Y = endY - size * Math.sin(angle + Math.PI / 6);
-
-    return `${endX},${endY} ${point1X},${point1Y} ${point2X},${point2Y}`;
+    return `${midX},${midY} ${point1X},${point1Y} ${point2X},${point2Y}`;
 }
 
 });
