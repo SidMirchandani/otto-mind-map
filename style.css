@@ -49,3 +49,7 @@ svg {
 .node-group {
     cursor: pointer;
 }
+
+html {
+    background-color: blue !important;
+}
