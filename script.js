@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'engineRefinement', label: 'Engine Refinement', x: 715, y: 370, color: '#ffccff' },
         { id: 'mechanization', label: 'Mechanization', x: 690, y: 430, color: '#ffccff' },
         { id: 'tradeBenefit', label: 'Increased Trade', x: 365, y: 70, color: '#ff9999' },
-        { id: 'jobsCreated', label: 'Led to New Jobs', x: 685, y: 70, color: '#9b4dca' },
         { id: 'military', label: 'Military Improvements', x: 717, y: 130, color: '#ff9999' },
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
         { id: 'environmentIssues', label: 'Environment Issues', x: 780, y: 250, color: '#ff9999' },
@@ -60,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { from: 'engineRefinement', to: 'efficiency' },
         { from: 'society', to: 'environmentIssues' },
         { from: 'automobiles', to: 'economics' },
-        { from: 'jobsCreated', to: 'military' }
     ];
 
     // Draw connections
