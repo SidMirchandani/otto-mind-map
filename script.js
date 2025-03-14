@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Define nodes
     const nodes = [
+        { id: 'cat1', label: 'Category1', x: 245, y: 100, color: '#9b4dca' },
+        { id: 'cat2', label: 'Category2', x: 520, y: 100, color: '#ff9999' },
         { id: 'otto', label: 'Otto Cycle Engine', x: 460, y: 320, color: '#9b4dca' },
         { id: 'racing', label: 'Racing', x: 130, y: 145, color: '#ff9999' },
         { id: 'motorsports', label: 'Motorsports', x: 138, y: 252, color: '#ffccff' },
