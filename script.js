@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
         { id: 'environmentIssues', label: 'Environment Issues', x: 780, y: 250, color: '#ff9999' },
         { id: 'emissions', label: 'More Emmisions', x: 775, y: 310, color: '#ffccff' },
-        { id: 'efficiency', label: 'Efficiency', x: 775, y: 430, color: '#ffccff' }
+        { id: 'efficiency', label: 'Efficiency', x: 795, y: 400, color: '#ffccff' }
     ];
 
     // Define connections
