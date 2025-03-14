@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { from: 'engineRefinement', to: 'efficiency' },
         { from: 'engineRefinement', to: 'emissions' },
         { from: 'society', to: 'environmentIssues' },
+        { from: 'society', to: 'economics' },
         { from: 'automobiles', to: 'economics' },
         { from: 'efficiency', to: 'mechanization' },
     ];
