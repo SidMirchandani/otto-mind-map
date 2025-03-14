@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'expressionArt', label: 'Expression in Art', x: 140, y: 370, color: '#ff9999' },
         { id: 'motorcycles', label: 'Motorcycles', x: 245, y: 205, color: '#ffccff' },
         { id: 'culture', label: 'Culture', x: 300, y: 310, color: '#ffccff' },
-        { id: 'infrastructure', label: 'Increased Infrastructure', x: 270, y: 450, color: '#ff9999' },
+        { id: 'infrastructure', label: 'Increased Infrastructure', x: 270, y: 470, color: '#ff9999' },
         { id: 'aviation', label: 'Aviation', x: 245, y: 145, color: '#ffccff' },
         { id: 'transportation', label: 'Transportation', x: 398, y: 250, color: '#ffccff' },
         { id: 'marineEngines', label: 'Marine Engines', x: 520, y: 145, color: '#ffccff' },
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'society', label: 'Society', x: 580, y: 250, color: '#ffccff' },
         { id: 'technology', label: 'Technology', x: 650, y: 310, color: '#ffccff' },
         { id: 'engineRefinement', label: 'Engine Refinement', x: 695, y: 370, color: '#ffccff' },
-        { id: 'mechanization', label: 'Mechanization', x: 690, y: 450, color: '#ff9999' },
+        { id: 'mechanization', label: 'Mechanization', x: 690, y: 470, color: '#ff9999' },
         { id: 'tradeBenefit', label: 'Increased Trade', x: 365, y: 120, color: '#ff9999' },
         { id: 'military', label: 'Military Improvements', x: 717, y: 120, color: '#ff9999' },
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
         { id: 'environmentIssues', label: 'Environment Issues', x: 780, y: 250, color: '#ff9999' },
         { id: 'emissions', label: 'More Emmisions', x: 775, y: 310, color: '#ffccff' },
-        { id: 'efficiency', label: 'Efficiency', x: 830, y: 430, color: '#ffccff' }
+        { id: 'efficiency', label: 'Efficiency', x: 775, y: 430, color: '#ffccff' }
     ];
 
     // Define connections
