@@ -191,14 +191,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Helper function to calculate arrowhead points
+    // Improved function to calculate arrowhead points
     function calculateArrowhead(x1, y1, x2, y2) {
+        // Calculate the angle of the line
         const angle = Math.atan2(y2 - y1, x2 - x1);
         const size = 10;
         
-        // Calculate the point slightly before the end
-        const endX = x2 - Math.cos(angle) * 15;
-        const endY = y2 - Math.sin(angle) * 15;
+        // Calculate the distance between nodes
+        const dx = x2 - x1;
+        const dy = y2 - y1;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+        
+        // Calculate node radius (approximate based on text length)
+        const toNodeRadius = 15; // Height of the node is 30, so radius is 15
+        
+        // Calculate end point (just before the target node)
+        const endX = x2 - Math.cos(angle) * toNodeRadius;
+        const endY = y2 - Math.sin(angle) * toNodeRadius;
         
         // Calculate the points for the arrowhead
         const point1X = endX - size * Math.cos(angle - Math.PI / 6);
