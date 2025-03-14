@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'society', label: 'Society', x: 580, y: 250, color: '#ffccff' },
         { id: 'technology', label: 'Technology', x: 650, y: 310, color: '#ffccff' },
         { id: 'engineRefinement', label: 'Engine Refinement', x: 695, y: 370, color: '#ffccff' },
-        { id: 'mechanization', label: 'Mechanization', x: 690, y: 455, color: '#ff9999' },
+        { id: 'mechanization', label: 'Mechanization', x: 680, y: 455, color: '#ff9999' },
         { id: 'tradeBenefit', label: 'Increased Trade', x: 365, y: 120, color: '#ff9999' },
         { id: 'military', label: 'Military Improvements', x: 717, y: 120, color: '#ff9999' },
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
