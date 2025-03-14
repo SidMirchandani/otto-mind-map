@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'military', label: 'Military Improvements', x: 717, y: 120, color: '#ff9999' },
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
         { id: 'environmentIssues', label: 'Environment Issues', x: 780, y: 250, color: '#ff9999' },
-        { id: 'emissions', label: 'More Emmisions', x: 885, y: 310, color: '#ffccff' },
+        { id: 'emissions', label: 'More Emmisions', x: 775, y: 310, color: '#ffccff' },
         { id: 'efficiency', label: 'Efficiency', x: 850, y: 430, color: '#ffccff' }
     ];
 
