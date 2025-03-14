@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { from: 'otto', to: 'culture' },
         { from: 'otto', to: 'technology' },
         { from: 'otto', to: 'industry' },
+        { from: 'otto', to: 'society' },
         { from: 'transportation', to: 'aviation' },
         { from: 'transportation', to: 'motorcycles' },
         { from: 'transportation', to: 'automobiles' },
