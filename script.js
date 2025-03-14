@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'infrastructure', label: 'Increased Infrastructure', x: 270, y: 430, color: '#ff9999' },
         { id: 'aviation', label: 'Aviation', x: 245, y: 130, color: '#ffccff' },
         { id: 'transportation', label: 'Transportation', x: 398, y: 250, color: '#ffccff' },
-        { id: 'marineEngines', label: 'Marine Engines', x: 458, y: 130, color: '#ffccff' },
+        { id: 'marineEngines', label: 'Marine Engines', x: 520, y: 130, color: '#ffccff' },
         { id: 'construction', label: 'Construction', x: 360, y: 370, color: '#ffccff' },
         { id: 'industry', label: 'Industry', x: 520, y: 370, color: '#ffccff' },
         { id: 'agriculture', label: 'Agriculture', x: 520, y: 430, color: '#ffccff' },
