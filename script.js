@@ -203,8 +203,8 @@ function calculateArrowhead(x1, y1, x2, y2) {
     } 
     
     // If horizontal, increase offset more aggressively
-    if (Math.abs(x2 - x1) > Math.abs(y2 - y1)) {
-        toNodeRadius = 85; // More padding for horizontal arrows
+    if (Math.abs(y2 - y1)<2) {
+        toNodeRadius = 75; // More padding for horizontal arrows
     } 
     // If diagonal, increase slightly
     else if (Math.abs(x2 - x1) > 15 && Math.abs(y2 - y1) > 15) {
