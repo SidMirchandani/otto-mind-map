@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'expressionArt', label: 'Expression in Art', x: 140, y: 370, color: '#ff9999' },
         { id: 'motorcycles', label: 'Motorcycles', x: 245, y: 205, color: '#ffccff' },
         { id: 'culture', label: 'Culture', x: 300, y: 310, color: '#ffccff' },
-        { id: 'infrastructure', label: 'Increased Infrastructure', x: 270, y: 470, color: '#ff9999' },
+        { id: 'infrastructure', label: 'Increased Infrastructure', x: 270, y: 450, color: '#ff9999' },
         { id: 'aviation', label: 'Aviation', x: 245, y: 145, color: '#ffccff' },
         { id: 'transportation', label: 'Transportation', x: 398, y: 250, color: '#ffccff' },
         { id: 'marineEngines', label: 'Marine Engines', x: 520, y: 145, color: '#ffccff' },
