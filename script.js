@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const distance = Math.sqrt(dx * dx + dy * dy);
         
         // Calculate node radius (approximate based on text length)
-        const toNodeRadius = 15; // Height of the node is 30, so radius is 15
+        const toNodeRadius = 25; // Height of the node is 30, so radius is 15
         
         // Calculate end point (just before the target node)
         const endX = x2 - Math.cos(angle) * toNodeRadius;
