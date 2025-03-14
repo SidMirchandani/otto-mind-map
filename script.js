@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateArrowhead(x1, y1, x2, y2) {
         // Calculate the angle of the line
         const angle = Math.atan2(y2 - y1, x2 - x1);
-        const size = 30;
+        const size = 20;
         
         // Calculate the distance between nodes
         const dx = x2 - x1;
