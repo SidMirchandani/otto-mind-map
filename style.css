@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    background-color: #0000FF;
     width: 100%;
     max-width: 1000px;
 }
@@ -19,7 +20,7 @@ body {
 }
 
 svg {
-    background-color: #b3d9ff;
+    background-color: #0066cc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
