@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'society', label: 'Society', x: 580, y: 250, color: '#ffccff' },
         { id: 'technology', label: 'Technology', x: 650, y: 310, color: '#ffccff' },
         { id: 'engineRefinement', label: 'Engine Refinement', x: 715, y: 370, color: '#ffccff' },
-        { id: 'mechanization', label: 'Mechanization', x: 690, y: 430, color: '#ffccff' },
+        { id: 'mechanization', label: 'Mechanization', x: 690, y: 430, color: '#ff9999' },
         { id: 'tradeBenefit', label: 'Increased Trade', x: 365, y: 70, color: '#ff9999' },
         { id: 'military', label: 'Military Improvements', x: 717, y: 130, color: '#ff9999' },
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
         { id: 'environmentIssues', label: 'Environment Issues', x: 780, y: 250, color: '#ff9999' },
-        { id: 'emissions', label: 'More Emmisions', x: 885, y: 310, color: '#ff9999' },
-        { id: 'efficiency', label: 'Efficiency', x: 850, y: 430, color: '#ff9999' }
+        { id: 'emissions', label: 'More Emmisions', x: 885, y: 310, color: '#ffccff' },
+        { id: 'efficiency', label: 'Efficiency', x: 850, y: 430, color: '#ffccff' }
     ];
 
     // Define connections
