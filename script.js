@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define nodes
     const nodes = [
         { id: 'otto', label: 'Otto Cycle Engine', x: 460, y: 320, color: '#9b4dca' },
-        { id: 'racing', label: 'Racing', x: 90, y: 195, color: '#ff9999' },
+        { id: 'racing', label: 'Racing', x: 90, y: 125, color: '#ff9999' },
         { id: 'motorsports', label: 'Motorsports', x: 138, y: 252, color: '#ffccff' },
         { id: 'roadTrips', label: 'Road Trips', x: 140, y: 310, color: '#ff9999' },
         { id: 'expressionArt', label: 'Expression in Art', x: 140, y: 370, color: '#ff9999' },
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'technology', label: 'Technology', x: 650, y: 310, color: '#ffccff' },
         { id: 'engineRefinement', label: 'Engine Refinement', x: 715, y: 370, color: '#ffccff' },
         { id: 'mechanization', label: 'Mechanization', x: 690, y: 430, color: '#ff9999' },
-        { id: 'tradeBenefit', label: 'Increased Trade', x: 365, y: 130, color: '#ff9999' },
-        { id: 'military', label: 'Military Improvements', x: 717, y: 130, color: '#ff9999' },
+        { id: 'tradeBenefit', label: 'Increased Trade', x: 365, y: 120, color: '#ff9999' },
+        { id: 'military', label: 'Military Improvements', x: 717, y: 120, color: '#ff9999' },
         { id: 'economics', label: 'Improved Economics', x: 735, y: 195, color: '#ff9999' },
         { id: 'environmentIssues', label: 'Environment Issues', x: 780, y: 250, color: '#ff9999' },
         { id: 'emissions', label: 'More Emmisions', x: 885, y: 310, color: '#ffccff' },
