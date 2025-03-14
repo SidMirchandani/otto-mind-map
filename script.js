@@ -190,31 +190,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Improved function to calculate arrowhead points
-    function calculateArrowhead(x1, y1, x2, y2) {
-        // Calculate the angle of the line
-        const angle = Math.atan2(y2 - y1, x2 - x1);
-        const size = 20;
-        
-        // Calculate the distance between nodes
-        const dx = x2 - x1;
-        const dy = y2 - y1;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        
-        // Calculate node radius (approximate based on text length)
-        const toNodeRadius = 25; // Height of the node is 30, so radius is 15
-        
-        // Calculate end point (just before the target node)
-        const endX = x2 - Math.cos(angle) * toNodeRadius;
-        const endY = y2 - Math.sin(angle) * toNodeRadius;
-        
-        // Calculate the points for the arrowhead
-        const point1X = endX - size * Math.cos(angle - Math.PI / 6);
-        const point1Y = endY - size * Math.sin(angle - Math.PI / 6);
-        
-        const point2X = endX - size * Math.cos(angle + Math.PI / 6);
-        const point2Y = endY - size * Math.sin(angle + Math.PI / 6);
-        
-        return `${endX},${endY} ${point1X},${point1Y} ${point2X},${point2Y}`;
+function calculateArrowhead(x1, y1, x2, y2) {
+    const angle = Math.atan2(y2 - y1, x2 - x1);
+    const size = 12; // Arrowhead size
+
+    // Adjust node radius dynamically based on direction
+    let toNodeRadius = 25; // Default offset
+
+    // If horizontal, increase offset
+    if (Math.abs(x2 - x1) > Math.abs(y2 - y1)) {
+        toNodeRadius = 30; // More padding for horizontal arrows
     }
+
+    // Calculate adjusted endpoint
+    const endX = x2 - Math.cos(angle) * toNodeRadius;
+    const endY = y2 - Math.sin(angle) * toNodeRadius;
+
+    // Calculate arrowhead points
+    const point1X = endX - size * Math.cos(angle - Math.PI / 6);
+    const point1Y = endY - size * Math.sin(angle - Math.PI / 6);
+    
+    const point2X = endX - size * Math.cos(angle + Math.PI / 6);
+    const point2Y = endY - size * Math.sin(angle + Math.PI / 6);
+
+    return `${endX},${endY} ${point1X},${point1Y} ${point2X},${point2Y}`;
+}
+
 });
